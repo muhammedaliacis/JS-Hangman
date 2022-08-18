@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(44, 52, 61);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+p {
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 1rem;
+}
+
+.main {
+    margin-top: 5vh;
+    width: 70%;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrong-letter {
+    float: right;
+    margin-right: 5vh;
+    font-size: 14px;
+}
+
+.wrong-letter p {
+    padding-top: 15px;
+}
+
+.grafik {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 4px;
+}
+
+.word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.letter {
+    border-bottom: 4px solid yellow;
+    margin: 0 3px;
+    padding-right: 2%;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+#popup-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background-color: green;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+#message {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 80px;
+    position: absolute;
+    bottom: -80px;
+    transition: transform 0.4s ease-in-out;
+}
+
+#message.show {
+    transform: translateY(-80px);
+}
+
+.item{
+    display: none;
+}
